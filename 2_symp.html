@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./portstyle.css">
+
+</head>
+<body>
+  
+    <div class="wrap">
+
+        <nav class="box1">
+            <div class="util">
+                <ul>
+                    <li><a href="./4_login.html">로그인</a></li>
+                    <li><a href="./5_signin.html">회원가입</a></li>
+                    <li><a href="">마이페이지</a></li>
+                </ul>
+           </div>
+        </nav>
+    
+<!--  -->
+        <header class="box2">
+            <div class="headerin">
+        
+                <!-- 로고 이미지 -->
+                <h1 class="logo">  
+                    <a href="">
+                       <h1><img class="logoimg" src="./img/LOGO2.png" alt="로고"></h1> 
+                    </a>
+                </h1>
+            </div>
+
+<!--메뉴  -->
+<menu class="box3">
+    <div class="gnb">
+        <ul>
+            <li><a href="./6_explanation.html">부위 별 설명</a></li>
+            <li><a href="./1_body.html">자가진단</a></li>
+            <li><a href="./10_exercise.html">보존적치료</a></li>
+            <li><a href="">게시판</a></li>
+            <li><a href="">공지사항</a></li>
+        </ul>
+   </div>
+
+    <div class="search">
+        <p>검색 : <input type="text" value="" id="txtbox"> <input type="button" value="확인" id="txtboxbtn">
+        </p>
+    </div>
+</menu>
+
+</header>
+
+<!-- 섹션  -->
+        <section class="box4">
+    <!-- 인체 이미지 -->
+        <div class="mainbody">
+                
+            <img class="img1" src="./img/img1.png" alt="body">
+            
+    <!-- 인체 부위 버튼-->
+            <div class="left">
+                <ul class>
+                    <li>
+                        <button class="check1">머리</button>
+                    </li>
+                    <li>
+                        <button class="check2">목</button>
+                    </li>
+                    <li>
+                        <button class="check3">등</button>
+                    </li>
+                
+                    <li>
+                        <button class="check4">어깨</button>
+                    </li>
+                
+                    <li>
+                        <button class="check5">허리</button>
+                    </li>
+                
+          
+                    <li>
+                        <button class="check6">팔꿈치</button>
+                    </li>
+                
+                
+                    <li>
+                        <button class="check7">손목</button>
+                    </li>
+                
+                    <li>
+                        <button class="check8">골반</button>
+                    </li>
+                
+                    <li>
+                        <button class="check9">무릎</button>
+                    </li>
+                
+                    <li>
+                        <button class="check10">발목</button>
+                    </li>
+                
+                    <li>
+                        <button class="check11">다리</button>
+                    </li>
+                
+                </ul>
+            </div>
+
+            <div class="right">
+                
+            <h1 class="title">2. 어떻게 아프신가요???</h1>
+
+            <form class="form1" action="">
+                <br><br>
+                <div class="form2">
+                    <div class="check">
+                        <h1>-이상부위-</h1>
+                        <br>
+                        <h2>-상체-</h2>
+                        <br>
+                        <ul class="upperbody">
+                            <li>상체의 이상부위는 <br></li>
+                            <li><input type="text" value=""  readonly></li>
+                            <li>입니다</li>
+
+                        </ul>    
+                        <br>
+                        <h2>-코어-</h2>
+
+                        <br>
+                    
+                        <ul class="core">
+                            <li>코어의 이상부위는 <br></li>
+                            <li><input type="text" value=""  readonly></li>
+                            <li>입니다</li>
+
+                    
+                    
+                        </ul>
+                        <br>
+                            <h2>-하체-</h2>
+                        <br>
+                        <ul class="bottombody">
+                            <li>하체의 이상부위는 </li>
+                            <li><input type="text" value=""  readonly></li>
+                            <li>입니다</li>
+
+           
+                        </ul>
+                 
+
+
+      
+                     <br> <br>
+                    
+                    <ul class="buttons">
+                        <li><input type="button" value="다 음 페 이 지" onclick="location.href='3_dig.html'"></li>
+                        <li><input type="button" value="뒤로가기" onclick="history.back(-1);"></li>
+                        <li> <button class="reset" type="reset"> 초 기 화</button> </li>
+                    </ul>
+                
+                    
+                    </div>
+                    
+                    <ul class="symptomcheck">
+                        <li><h1 >-증상-</h1></li>
+                        <br>
+                        <li>&nbsp;저림 찌릿함 근경련&nbsp;:&nbsp;<input type="checkbox" name="paralyze" id=""></li><br>
+                        <li>&nbsp;결림 뭉침 긴장&nbsp;:&nbsp;<input type="checkbox" name="stressed" id=""></li><br>
+                        <li>&nbsp;두통 어지러움&nbsp;:&nbsp;<input type="checkbox" name="headache" id=""></li><br>
+                        <li>&nbsp;감각이상(민감OR 둔감)&nbsp;:&nbsp;<input type="checkbox" name="nerve" id=""></li><br>
+                        <li>&nbsp;동작시 아픔&nbsp;:&nbsp;<input type="checkbox" name="painMoving" id=""></li><br>
+                        <li>&nbsp;운동 범위 감소&nbsp;:&nbsp;<input type="checkbox" name="RNGofMotion" id=""></li> <br>
+                        <li>&nbsp;부음&nbsp;:&nbsp;<input type="checkbox" name="Obituary" id=""></li> <br>
+                        <li>&nbsp;형태변형&nbsp;:&nbsp;<input type="checkbox" name="out of shape" id=""></li> <br>
+
+                    </ul>
+                    <div>
+
+                    </div>
+          
+
+           
+
+                </div> <!-- form2 -->
+
+    
+
+            </form>
+            </div>
+        </div>
+            
+
+
+
+        </section>
+
+<!-- 푸터 -->
+     <footer class="box5">
+
+
+        <div class="footerin">
+            <p class="flogo">      
+                <img src="/3_사이트연습/02_현대리바트/img/flogo.png" alt="">
+            </p>
+            <div class="fbox">
+                <!-- <div class="fmenu">
+                    <ul>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">윤리경영</a></li>
+                        <li><a href="">투자정보</a></li>
+                        <li><a href="">인재채용</a></li>
+                        <li><a href="">제휴 및 대리점 개설 안내</a></li>
+                        <li><a href="">사이트맵</a></li>
+                        <li><a href="">오시는 길</a></li>
+                        <li><a href="">English</a></li>
+                    </ul>
+                </div> fmenu -->
+
+                <div class="finfo">
+            
+                    상호명 : (주)척추지킴이
+                    <span class="bar"></span> 
+                    대표이사 : 김세현  
+                    <span class="bar"></span> 
+                    본사 : 경상남도 울산 광역시 동구 서부동 봉수로 450 108동 2302호   
+                    <span class="bar"></span> 
+                    울산 사무소 : 삼산 그린아카데미
+                    <br>
+                    대표전화 : 010-8605-9890 (영업문의)  
+                    <span class="bar"></span> 
+                    고객센터 : 1577-xxxx  
+                    <span class="bar"></span> 
+                    FAX : xx-xxxx-xxxxx  
+                    <span class="bar"></span> 
+                    E-mail : ntirano@gmail.com  
+                    <span class="bar"></span> 
+                    개인정보관리 책임자 : 김세현
+                    <br>
+                    사업자등록번호:xxx-xx-xxxxx  
+                    <span class="bar"></span> 
+                    통신판매업소신고 : 2014-용인처인-00049
+        
+                </div> <!--finfo-->
+
+                <div class="copyright">
+                    ⓒ김세현 the 등골 브레이커. All Rights Reserved.
+            
+                </div> <!--copyright-->
+        
+
+            </div> <!--fbox-->
+            
+
+            
+
+        </div> <!--footerin-->
+
+
+     </footer> <!--footer-->
+
+
+
+    </div><!-- wrap-->
+</body>
+</html>
