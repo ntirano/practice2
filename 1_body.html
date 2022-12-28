@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./portstyle.css">
+
+</head>
+<body> 
+  
+    
+
+
+    <div class="wrap">
+
+        <nav class="box1">
+            <div class="util">
+                <ul>
+                    <li><a href="./4_login.html">로그인</a></li>
+                    <li><a href="./5_signin.html">회원가입</a></li>
+                    <li><a href="">마이페이지</a></li>
+                </ul>
+           </div>
+        </nav>
+    
+<!--  -->
+        <header class="box2">
+            <div class="headerin">
+        
+                <!-- 로고 이미지 -->
+                <h1 class="logo">  
+                    <a href="">
+                       <h1><img class="logoimg" src="./img/LOGO2.png" alt="로고"></h1> 
+                    </a>
+                </h1>
+            </div>
+
+<!--메뉴  -->
+        <menu class="box3">
+            <div class="gnb">
+                <ul>
+                    <li><a href="./6_explanation.html">부위 별 설명</a></li>
+                    <li><a href="./1_body.html">자가진단</a></li>
+                    <li><a href="./10_exercise.html">보존적치료</a></li>
+                    <li><a href="">게시판</a></li>
+                    <li><a href="">공지사항</a></li>
+                </ul>
+           </div>
+
+            <div class="search">
+                <p>검색 : <input type="text" value="" id="txtbox"> <input type="button" value="확인" id="txtboxbtn">
+                </p>
+            </div>
+        </menu>
+
+        </header>
+
+<!-- 섹션  -->
+        <section class="box4">
+    <!-- 인체 이미지 -->
+        <div class="mainbody">
+                
+            <img class="img1" src="./img/img1.png" alt="body">
+            
+    <!-- 인체 부위 버튼-->
+            <div class="left">
+                <ul class>
+                    <li>
+                        <button class="check1" disabled>머리</button>
+                    </li>
+                    <li>
+                        <button class="check2" disabled>목</button>
+                    </li>
+                    <li>
+                        <button class="check3" disabled>등</button>
+                    </li>
+                
+                    <li>
+                        <button class="check4" disabled>어깨</button>
+                    </li>
+                
+                    <li>
+                        <button class="check5" disabled>허리</button>
+                    </li>
+                
+          
+                    <li>
+                        <button class="check6" disabled>팔꿈치</button>
+                    </li>
+                
+                
+                    <li>
+                        <button class="check7" disabled>손목</button>
+                    </li>
+                
+                    <li>
+                        <button class="check8" disabled>골반</button>
+                    </li>
+                
+                    <li>
+                        <button class="check9" disabled>무릎</button>
+                    </li>
+                
+                    <li>
+                        <button class="check10" disabled>발목</button>
+                    </li>
+                
+                    <li>
+                        <button class="check11" disabled>다리</button>
+                    </li>
+                
+                </ul>
+            </div>
+
+            <div class="right">
+                
+            <h1 class="title">1. 아픈부위를 체크하세요!!!</h1>
+
+            <form class="form1" action="">
+                <br><br>
+                <div class="form2">
+                    <div class="check">
+                        <h1>이상부위</h1>
+                        <br>
+                        <h2>-상체-</h2>
+                        <br>
+                        <ul class="upperbody">
+                   
+                
+                            <li>
+                                <label>  <input class="shoulder" type="checkbox" disabled>어깨</label>
+                            </li>
+                            <li>
+                                <label>   <input class="wrist" type="checkbox" disabled>손목</label>
+                            </li>
+                            <li>
+                                <label>  <input class="armheel" type="checkbox" disabled>팔꿈치</label>
+                            </li>
+                            <li>
+                                <label>   <input class="head" type="checkbox" disabled>머리</label>
+                             </li>
+
+                        </ul>    
+                        <br>
+                        <h2>-코어-</h2>
+                        <br>
+                    
+                        <ul class="core">
+                
+
+                            <li>
+                                <label>  <input class="back" type="checkbox" disabled>등</label>
+                            </li>
+                            <li>
+                                <label>  <input class="neck" type="checkbox" disabled>목</label>
+                            </li>         
+                            <li>
+                                <label>  <input class="pelvis" type="checkbox" disabled>골반</label>
+                            </li>                  
+                            <li>
+                            <li>
+                                <label> <input class="waist" type="checkbox" disabled>허리</label>
+                            </li>                    
+                        </ul>
+                        <br>
+                            <h2>-하체-</h2>
+                        <br>
+                        <ul class="bottombody">
+                            <li>
+                                <label>  <input class="leg" type="checkbox" disabled>다리</label>
+                            </li>
+                            <li>
+                                <label>   <input class="knee" type="checkbox" disabled>무릎</label>
+                            </li>
+                            <li>
+                                <label>  <input class="heels" type="checkbox" disabled>발목</label>
+                            </li>                 
+ 
+             
+             
+             
+             
+          
+                  
+             
+           
+
+             
+              
+             
+               
+
+                        </ul>
+                 
+      
+                     <br> <br>
+                        
+                        <ul class="buttons">
+                            <li><input type="button" value="다 음 페 이 지" onclick="location.href='2_symp.html'"></li>
+                            <li> <button class="reset" type="reset"> 초 기 화</button> </li>
+                        </ul>
+             
+                    </div>
+
+                    <ul>
+                        <li> <h2> 상세 부위는 아직 미지원 입니다! </h2></li> <br> <br>
+                        <li><h2>중요!!!</h2></li>
+                        <br>
+            
+                        <li> <br>이 사이트의 정보가 전문적 자문을 제공하기 위한 것이 아니며, 
+                            <br> 자격을 갖춘 의사, 약사 또는 다른 의료 전문가와의 직접 개별적 
+                            <br> 조언을 구하는 것을 대체하기 위한 것이 아닙니다. 
+                            <br> 이 사이트에서 발견한 정보로 인해, 독자가 의학적 조언을 
+                            <br> 무시하거나 조언을 구하는 것을 미루어선 안 됩니다.
+                        </li>
+                        <br>
+                        <li>
+                         <input type="text" name="name_input" id="name" placeholder="확인하였습니다">
+                        </li>
+                    </ul>
+
+                </div> <!-- form2 -->
+
+    
+
+            </form>
+            </div>
+        </div>
+        
+        </section>
+<!-- 푸터 -->
+<footer class="box5">
+
+
+    <div class="footerin">
+        <p class="flogo">      
+            <img src="/3_사이트연습/02_현대리바트/img/flogo.png" alt="">
+        </p>
+        <div class="fbox">
+            <!-- <div class="fmenu">
+                <ul>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">윤리경영</a></li>
+                    <li><a href="">투자정보</a></li>
+                    <li><a href="">인재채용</a></li>
+                    <li><a href="">제휴 및 대리점 개설 안내</a></li>
+                    <li><a href="">사이트맵</a></li>
+                    <li><a href="">오시는 길</a></li>
+                    <li><a href="">English</a></li>
+                </ul>
+            </div> fmenu -->
+
+            <div class="finfo">
+        
+                상호명 : (주)척추지킴이
+                <span class="bar"></span> 
+                대표이사 : 김세현  
+                <span class="bar"></span> 
+                본사 : 경상남도 울산 광역시 동구 서부동 봉수로 450 108동 2302호   
+                <span class="bar"></span> 
+                울산 사무소 : 삼산 그린아카데미
+                <br>
+                대표전화 : 010-8605-9890 (영업문의)  
+                <span class="bar"></span> 
+                고객센터 : 1577-xxxx  
+                <span class="bar"></span> 
+                FAX : xx-xxxx-xxxxx  
+                <span class="bar"></span> 
+                E-mail : ntirano@gmail.com  
+                <span class="bar"></span> 
+                개인정보관리 책임자 : 김세현
+                <br>
+                사업자등록번호:xxx-xx-xxxxx  
+                <span class="bar"></span> 
+                통신판매업소신고 : 2014-용인처인-00049
+    
+            </div> <!--finfo-->
+
+            <div class="copyright">
+                ⓒ김세현 the 등골 브레이커. All Rights Reserved.
+        
+            </div> <!--copyright-->
+    
+
+        </div> <!--fbox-->
+        
+
+        
+
+    </div> <!--footerin-->
+
+
+ </footer>
+
+    </div>
+</body>
+
+
+<script>
+
+document.getElementById("name").addEventListener("keyup", function() {
+    var nameInput = document.getElementById('name').value;
+    if (nameInput == "확인하였습니다") {
+        document.querySelector('.head').removeAttribute("disabled");
+        document.querySelector('.neck').removeAttribute("disabled");
+        document.querySelector('.back').removeAttribute("disabled");
+        document.querySelector('.shoulder').removeAttribute("disabled");
+        document.querySelector('.waist').removeAttribute("disabled");
+        document.querySelector('.armheel').removeAttribute("disabled");
+        document.querySelector('.wrist').removeAttribute("disabled");
+        document.querySelector('.pelvis').removeAttribute("disabled");
+        document.querySelector('.knee').removeAttribute("disabled");
+        document.querySelector('.heels').removeAttribute("disabled");
+        document.querySelector('.leg').removeAttribute("disabled");
+        document.querySelector('.check1').removeAttribute("disabled");
+        document.querySelector('.check2').removeAttribute("disabled");
+        document.querySelector('.check3').removeAttribute("disabled");
+        document.querySelector('.check4').removeAttribute("disabled");
+        document.querySelector('.check5').removeAttribute("disabled");
+        document.querySelector('.check6').removeAttribute("disabled");
+        document.querySelector('.check7').removeAttribute("disabled");
+        document.querySelector('.check8').removeAttribute("disabled");
+        document.querySelector('.check9').removeAttribute("disabled");
+        document.querySelector('.check10').removeAttribute("disabled");
+        document.querySelector('.check11').removeAttribute("disabled")
+    } else {
+        document.getElementById('send').setAttribute("disabled", null);
+    }
+})
+
+
+
+//========================================
+var clicked = false;
+$(".check1").on("click", function() {
+  $(".head").prop("checked", !clicked);
+  clicked = !clicked;
+  this.innerHTML = clicked ? '아파요' : '머리';
+});
+$(".check2").on("click", function() {
+  $(".neck").prop("checked", !clicked);
+  clicked = !clicked;
+  this.innerHTML = clicked ? '아파요' : '목';
+});
+$(".check3").on("click", function() {
+  $(".back").prop("checked", !clicked);
+  clicked = !clicked;
+  this.innerHTML = clicked ? '아파요' : '등';
+});
+$(".check4").on("click", function() {
+  $(".shoulder").prop("checked", !clicked);
+  clicked = !clicked;
+  this.innerHTML = clicked ? '아파요' : '어깨';
+});
+$(".check5").on("click", function() {
+  $(".waist").prop("checked", !clicked);
+  clicked = !clicked;
+  this.innerHTML = clicked ? '아파요' : '허리';
+});
+$(".check6").on("click", function() {
+  $(".armheel").prop("checked", !clicked);
+  clicked = !clicked;
+  this.innerHTML = clicked ? '아파요' : '팔꿈치';
+});
+$(".check7").on("click", function() {
+  $(".wrist").prop("checked", !clicked);
+  clicked = !clicked;
+  this.innerHTML = clicked ? '아파요' : '손목';
+});
+$(".check8").on("click", function() {
+  $(".pelvis").prop("checked", !clicked);
+  clicked = !clicked;
+  this.innerHTML = clicked ? '아파요' : '골반';
+});
+$(".check9").on("click", function() {
+  $(".knee").prop("checked", !clicked);
+  clicked = !clicked;
+  this.innerHTML = clicked ? '아파요' : '무릎';
+});
+$(".check10").on("click", function() {
+  $(".heels").prop("checked", !clicked);
+  clicked = !clicked;
+  this.innerHTML = clicked ? '아파요' : '발목';
+});
+$(".check11").on("click", function() {
+  $(".leg").prop("checked", !clicked);
+  clicked = !clicked;
+  this.innerHTML = clicked ? '아파요' : '다리';
+});
+
+
+$(".head").on("click", function() {
+  $(".check1").prop("checked", !clicked);
+  clicked = !clicked;
+  document.querySelector('.check1').innerHTML = clicked ? '아파요' : '머리';
+});
+$(".neck").on("click", function() {
+  $(".check2").prop("checked", !clicked);
+  clicked = !clicked;
+  document.querySelector('.check2').innerHTML = clicked ? '아파요' : '목';
+});
+$(".back").on("click", function() {
+  $(".check3").prop("checked", !clicked);
+  clicked = !clicked;
+  document.querySelector('.check3').innerHTML = clicked ? '아파요' : '등';
+});
+$(".shoulder").on("click", function() {
+  $(".check4").prop("checked", !clicked);
+  clicked = !clicked;
+  document.querySelector('.check4').innerHTML = clicked ? '아파요' : '어깨';
+});
+$(".waist").on("click", function() {
+  $(".check5").prop("checked", !clicked);
+  clicked = !clicked;
+  document.querySelector(".check5").innerHTML = clicked ? '아파요' : '허리';
+});
+$(".armheel").on("click", function() {
+  $(".check6").prop("checked", !clicked);
+  clicked = !clicked;
+  document.querySelector(".check6").innerHTML = clicked ? '아파요' : '팔꿈치';
+});
+$(".wrist").on("click", function() {
+  $(".check7").prop("checked", !clicked);
+  clicked = !clicked;
+  document.querySelector(".check7").innerHTML = clicked ? '아파요' : '손목';
+});
+$(".pelvis").on("click", function() {
+  $(".check8").prop("checked", !clicked);
+  clicked = !clicked;
+  document.querySelector(".check8").innerHTML = clicked ? '아파요' : '골반';
+});
+$(".knee").on("click", function() {
+  $(".check9").prop("checked", !clicked);
+  clicked = !clicked;
+  document.querySelector(".check9").innerHTML = clicked ? '아파요' : '무릎';
+});
+$(".heels").on("click", function() {
+  $(".check10").prop("checked", !clicked);
+  clicked = !clicked;
+  document.querySelector(".check10").innerHTML = clicked ? '아파요' : '발목';
+});
+$(".leg").on("click", function() {
+  $(".check11").prop("checked", !clicked);
+  clicked = !clicked;
+  document.querySelector(".check11").innerHTML = clicked ? '아파요' : '다리';
+});
+
+
+</script>
+
+
+</html>
